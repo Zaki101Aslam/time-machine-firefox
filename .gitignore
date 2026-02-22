@@ -1,0 +1,15 @@
+# OS Metadata
+.DS_Store
+Thumbs.db
+
+# Firefox temporary files
+.web-extension-id
+web-ext-artifacts/
+
+# Packaging
+*.zip
+*.xpi
+
+# Local environment
+.vscode/
+.idea/

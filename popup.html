@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+    
+    body { 
+      width: 250px; padding: 15px; background: #0a0a0a; color: #0f0; 
+      font-family: 'VT323', monospace; font-size: 18px; 
+      border: 2px solid #0f0; box-shadow: inset 0 0 15px rgba(0,255,0,0.2); 
+    }
+    h3 { 
+      text-align: center; border-bottom: 1px dashed #0f0; padding-bottom: 5px; 
+      text-transform: uppercase; letter-spacing: 2px; margin-top: 0; 
+    }
+    .row { display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px; }
+    
+    /* Custom Retro Toggle Switch */
+    .switch { position: relative; display: inline-block; width: 140px; height: 28px; }
+    .switch input { opacity: 0; width: 0; height: 0; }
+    .slider { 
+      position: absolute; cursor: pointer; top: 0; left: 0; right: 0; bottom: 0; 
+      background-color: #111; border: 1px solid #0f0; transition: .4s; 
+      display: flex; align-items: center; justify-content: center; 
+    }
+    .slider:before { 
+      position: absolute; content: ""; height: 22px; width: 24px; left: 2px; bottom: 2px; 
+      background-color: #0f0; transition: .4s; z-index: 2; box-shadow: 0 0 5px #0f0;
+    }
+    input:checked + .slider:before { transform: translateX(110px); background-color: #f0f; box-shadow: 0 0 5px #f0f;}
+    input:checked + .slider { border-color: #f0f; }
+    
+    .mode-label { position: absolute; width: 100%; text-align: center; z-index: 1; pointer-events: none; text-transform: uppercase; }
+    
+    /* Inputs & Buttons */
+    input[type="date"] { 
+      background: #000; color: #0f0; border: 1px solid #0f0; 
+      font-family: 'VT323', monospace; font-size: 16px; padding: 4px; outline: none; 
+    }
+    input[type="checkbox"].basic { accent-color: #0f0; width: 18px; height: 18px; cursor: pointer; }
+    button { 
+      width: 100%; padding: 10px; background: #000; color: #0f0; 
+      border: 2px solid #0f0; font-family: 'VT323', monospace; font-size: 20px; 
+      cursor: pointer; text-transform: uppercase; letter-spacing: 1px; transition: 0.2s;
+    }
+    button:hover { background: #0f0; color: #000; }
+  </style>
+</head>
+<body>
+  <h3>Time Machine</h3>
+  
+  <div class="row">
+    <label>Power:</label>
+    <input type="checkbox" class="basic" id="toggleFilter">
+  </div>
+
+  <div class="row">
+    <label>Mode:</label>
+    <label class="switch">
+      <input type="checkbox" id="modeToggle">
+      <span class="slider"></span>
+      <span class="mode-label" id="modeText">Filter Future</span>
+    </label>
+  </div>
+
+  <div class="row">
+    <label>Target Date:</label>
+    <input type="date" id="dateInput"> 
+  </div>
+
+  <button id="saveBtn">Engage</button>
+
+  <script src="popup.js"></script>
+</body>
+</html>

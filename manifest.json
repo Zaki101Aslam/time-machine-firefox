@@ -1,0 +1,36 @@
+{
+  "manifest_version": 3,
+  "name": "Time Machine (Google & YouTube)",
+  "version": "1.0.0",
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "timemachine@retro-filter.local",
+      "data_collection_permissions": {
+        "required": ["none"]
+      }
+    }
+  },
+  "description": "Travels through the web's timeline. Filters modern or past search results and videos on Google and YouTube.",
+  "permissions": ["storage"],
+  "host_permissions": [
+    "*://*.google.com/*",
+    "*://*.youtube.com/*"
+  ],
+  "icons": {
+    "48": "icon-48.png",
+    "128": "icon-128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*.google.com/*",
+        "*://*.youtube.com/*"
+      ],
+      "js": ["content.js"]
+    }
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": "icon-48.png"
+  }
+}
