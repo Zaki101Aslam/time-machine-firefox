@@ -24,7 +24,7 @@ A privacy-focused Firefox extension that gives you total control over the chrono
 If you want to test the extension manually before it is officially released on the store, follow these steps:
 
 ### 1. Prepare the Source
-- Clone this repository: `git clone https://github.com/YOUR_USERNAME/YOUR_REPO_NAME.git`
+- Clone this repository: `git clone https://github.com/Zaki101Aslam/time-machine-firefox.git`
 - Navigate to the project folder. Ensure you see `manifest.json`, `content.js`, `popup.html`, `popup.js`, and the `icon` files.
 
 ### 2. Load into Firefox (Temporary)
