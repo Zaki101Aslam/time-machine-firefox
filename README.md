@@ -4,8 +4,11 @@ A privacy-focused Firefox extension that gives you total control over the chrono
 
 ![Retro Dashboard](https://img.shields.io/badge/Aesthetic-Neon_Retro-ff00ff)
 ![Privacy](https://img.shields.io/badge/Privacy-100%25_Local-00ff00)
-![Status](https://img.shields.io/badge/Status-Passed_Review-yellow)
+![Status](https://img.shields.io/badge/Status-Passed_Review-green)
 
+ Browser   | Install from ... |
+| :-------: | ---------------- |
+| <img src="https://github.com/user-attachments/assets/b0136512-56a5-4856-8c50-4971c957a24f" alt="Get Time Machine for Firefox"> | <a href="[https://addons.mozilla.org/addon/ublock-origin/](https://addons.mozilla.org/en-US/firefox/addon/time-machine-google-youtube/)">Firefox Add-ons</a> |
 ## 🚀 Overview
 **Time Machine** allows you to set a specific "Cutoff Date" and choose a direction:
 - **Filter Future (Hide Newer):** Banishes everything published *after* your target date. Perfect for historical research or escaping modern content algorithms (YouTube Shorts, Google AI Overviews).
