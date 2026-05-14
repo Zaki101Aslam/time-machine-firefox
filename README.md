@@ -6,9 +6,6 @@ A privacy-focused Firefox extension that gives you total control over the chrono
 ![Privacy](https://img.shields.io/badge/Privacy-100%25_Local-00ff00)
 ![Status](https://img.shields.io/badge/Status-Passed_Review-yellow)
 
-## 🚀 Status
-**Note:** This extension has been submitted to the Mozilla Add-on Store and is currently **Awaiting Review**. Once approved, a direct installation link will be provided here.
-
 ## 🚀 Overview
 **Time Machine** allows you to set a specific "Cutoff Date" and choose a direction:
 - **Filter Future (Hide Newer):** Banishes everything published *after* your target date. Perfect for historical research or escaping modern content algorithms (YouTube Shorts, Google AI Overviews).
