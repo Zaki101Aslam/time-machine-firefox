@@ -4,7 +4,7 @@ A privacy-focused Firefox extension that gives you total control over the chrono
 
 ![Retro Dashboard](https://img.shields.io/badge/Aesthetic-Neon_Retro-ff00ff)
 ![Privacy](https://img.shields.io/badge/Privacy-100%25_Local-00ff00)
-![Status](https://img.shields.io/badge/Status-Awaiting_Review-yellow)
+![Status](https://img.shields.io/badge/Status-Passed_Review-yellow)
 
 ## 🚀 Status
 **Note:** This extension has been submitted to the Mozilla Add-on Store and is currently **Awaiting Review**. Once approved, a direct installation link will be provided here.
