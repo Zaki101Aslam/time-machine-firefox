@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
-  "name": "Time Machine (Google & YouTube)",
-  "version": "1.0.0",
+  "name": "Time Machine (Search & Video Timeline)",
+  "version": "1.1.0",
   "browser_specific_settings": {
     "gecko": {
       "id": "timemachine@retro-filter.local",
@@ -10,11 +10,39 @@
       }
     }
   },
-  "description": "Travels through the web's timeline. Filters modern or past search results and videos on Google and YouTube.",
-  "permissions": ["storage"],
+  "description": "Travels through the web's timeline. Filters modern or past search results on Google, YouTube, DuckDuckGo, and Bing, with Wayback Machine archive travel.",
+  "permissions": ["storage", "activeTab"],
   "host_permissions": [
     "*://*.google.com/*",
-    "*://*.youtube.com/*"
+    "*://*.google.co.in/*",
+    "*://*.google.co.uk/*",
+    "*://*.google.ca/*",
+    "*://*.google.de/*",
+    "*://*.google.fr/*",
+    "*://*.google.co.jp/*",
+    "*://*.google.com.au/*",
+    "*://*.google.it/*",
+    "*://*.google.es/*",
+    "*://*.google.com.br/*",
+    "*://*.google.nl/*",
+    "*://*.google.pl/*",
+    "*://*.google.com.mx/*",
+    "*://*.google.co.id/*",
+    "*://*.google.com.pk/*",
+    "*://*.google.com.ng/*",
+    "*://*.google.ch/*",
+    "*://*.google.be/*",
+    "*://*.google.at/*",
+    "*://*.google.se/*",
+    "*://*.google.ru/*",
+    "*://*.google.co.za/*",
+    "*://*.google.com.tr/*",
+    "*://*.google.com.tw/*",
+    "*://*.google.com.hk/*",
+    "*://*.google.com.sg/*",
+    "*://*.youtube.com/*",
+    "*://*.duckduckgo.com/*",
+    "*://*.bing.com/*"
   ],
   "icons": {
     "48": "icon-48.png",
@@ -24,9 +52,38 @@
     {
       "matches": [
         "*://*.google.com/*",
-        "*://*.youtube.com/*"
+        "*://*.google.co.in/*",
+        "*://*.google.co.uk/*",
+        "*://*.google.ca/*",
+        "*://*.google.de/*",
+        "*://*.google.fr/*",
+        "*://*.google.co.jp/*",
+        "*://*.google.com.au/*",
+        "*://*.google.it/*",
+        "*://*.google.es/*",
+        "*://*.google.com.br/*",
+        "*://*.google.nl/*",
+        "*://*.google.pl/*",
+        "*://*.google.com.mx/*",
+        "*://*.google.co.id/*",
+        "*://*.google.com.pk/*",
+        "*://*.google.com.ng/*",
+        "*://*.google.ch/*",
+        "*://*.google.be/*",
+        "*://*.google.at/*",
+        "*://*.google.se/*",
+        "*://*.google.ru/*",
+        "*://*.google.co.za/*",
+        "*://*.google.com.tr/*",
+        "*://*.google.com.tw/*",
+        "*://*.google.com.hk/*",
+        "*://*.google.com.sg/*",
+        "*://*.youtube.com/*",
+        "*://*.duckduckgo.com/*",
+        "*://*.bing.com/*"
       ],
-      "js": ["content.js"]
+      "js": ["content.js"],
+      "run_at": "document_idle"
     }
   ],
   "action": {
